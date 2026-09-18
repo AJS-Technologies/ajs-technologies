@@ -1,0 +1,232 @@
+/* Decorative service miniatures share one bounded stage and never overlap text. */
+.service-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  block-size: 10rem;
+  inline-size: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  direction: ltr;
+  background: radial-gradient(ellipse, #215eae17, transparent 70%);
+}
+.mini-browser {
+  inline-size: 11rem;
+  block-size: 6.5rem;
+  border: 1px solid #7296d477;
+  border-radius: 0.5rem;
+  background: #132746;
+  transform: rotate(-4deg);
+  transition: transform 0.3s;
+}
+.service-card:hover .mini-browser {
+  transform: rotate(0);
+}
+.browser-dots {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.5rem;
+  border-block-end: 1px solid #5779a744;
+}
+.browser-dots i {
+  inline-size: 0.25rem;
+  block-size: 0.25rem;
+  border-radius: 50%;
+  background: #7ba3dd;
+}
+.browser-content {
+  display: flex;
+  gap: 0.75rem;
+  padding: 1rem 0.75rem;
+}
+.browser-content > div {
+  flex: 1;
+}
+.browser-content i {
+  display: block;
+  block-size: 0.25rem;
+  inline-size: 85%;
+  background: #86abdf;
+  border-radius: 0.25rem;
+  margin-block-end: 0.375rem;
+}
+.browser-content i:nth-child(2) {
+  inline-size: 60%;
+}
+.browser-content b {
+  display: block;
+  inline-size: 2rem;
+  block-size: 0.75rem;
+  background: #4987dd;
+  border-radius: 0.125rem;
+  margin-block-start: 0.75rem;
+}
+.browser-content > span {
+  inline-size: 2.5rem;
+  block-size: 2.5rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  background: linear-gradient(135deg, #4c88de, #8bc7ff);
+}
+.data-bars {
+  display: flex;
+  align-items: end;
+  gap: 0.375rem;
+  block-size: 7.5rem;
+  padding-inline: 0.75rem;
+  border-block-end: 1px solid #5f8bd0;
+}
+.data-bars i {
+  inline-size: 0.875rem;
+  max-block-size: 100%;
+  background: linear-gradient(0deg, #386aa833, #6da6ed);
+  border-block-start: 1px solid #aed3ff;
+  border-radius: 0.2rem 0.2rem 0 0;
+  transform-origin: bottom;
+  animation: bars-breathe 9s ease-in-out infinite;
+}
+.ai-orb {
+  position: relative;
+  inline-size: 4.75rem;
+  block-size: 4.75rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid #81b1f577;
+  border-radius: 1rem;
+  background: #26487655;
+}
+.ai-orb > span {
+  font-size: 2.5rem;
+  color: #a3cdff;
+  line-height: 1;
+}
+.ai-orb i,
+.ai-orb b {
+  position: absolute;
+  inset: -1rem;
+  border: 1px solid #5489d155;
+  border-radius: 50%;
+  transform: rotate(-25deg) scaleY(0.55);
+}
+.ai-orb b {
+  transform: rotate(60deg) scaleY(0.6);
+  inset: -1.5rem;
+}
+.phone {
+  inline-size: 3.75rem;
+  block-size: 7rem;
+  border: 2px solid #88b5ee99;
+  border-radius: 0.75rem;
+  padding: 0.625rem 0.375rem;
+  background: #162b48;
+  transform: rotate(6deg);
+  transition: transform 0.3s;
+}
+.service-card:hover .phone {
+  transform: rotate(0);
+}
+.phone > i {
+  display: block;
+  inline-size: 1rem;
+  block-size: 2px;
+  margin: -0.25rem auto 0.5rem;
+  border-radius: 2px;
+  background: #a4c7f4;
+}
+.phone > div {
+  block-size: 2rem;
+  background: linear-gradient(135deg, #3d70b7, #74b5f4);
+  border-radius: 0.25rem;
+  margin-block-end: 0.5rem;
+}
+.phone > span {
+  display: block;
+  inline-size: 85%;
+  block-size: 3px;
+  background: #759aca;
+  margin-block-end: 0.25rem;
+}
+.phone > b {
+  display: block;
+  inline-size: 55%;
+  block-size: 0.625rem;
+  background: #558ee0;
+  border-radius: 2px;
+  margin-block-start: 0.5rem;
+}
+.server-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.server-stack i {
+  position: relative;
+  display: block;
+  inline-size: 8.5rem;
+  block-size: 1.625rem;
+  border: 1px solid #6b9ae077;
+  border-radius: 0.3rem;
+  background: linear-gradient(90deg, #254977, #173051);
+}
+.server-stack i::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0.625rem;
+  inset-block-start: 0.625rem;
+  inline-size: 1.75rem;
+  block-size: 3px;
+  background: #9fbfe8;
+  border-radius: 2px;
+}
+.server-stack i::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0.625rem;
+  inset-block-start: 0.625rem;
+  inline-size: 4px;
+  block-size: 4px;
+  background: #a9dcff;
+  border-radius: 50%;
+}
+.network-nodes {
+  position: relative;
+  inline-size: 10rem;
+  block-size: 6rem;
+  background:
+    linear-gradient(31deg, transparent 49.5%, #78aaf566 50%, transparent 50.7%),
+    linear-gradient(-31deg, transparent 49.5%, #78aaf566 50%, transparent 50.7%);
+}
+.network-nodes > span {
+  position: absolute;
+  inset-inline-start: calc(50% - 1.5rem);
+  inset-block-start: calc(50% - 1.5rem);
+  display: grid;
+  place-items: center;
+  inline-size: 3rem;
+  block-size: 3rem;
+  border: 1px solid #7eacf477;
+  border-radius: 0.75rem;
+  background: #22416d;
+  color: #b0d5ff;
+  font-size: 1.5rem;
+}
+.network-nodes i {
+  position: absolute;
+  inline-size: 0.75rem;
+  block-size: 0.75rem;
+  border-radius: 0.2rem;
+  background: #659eeb;
+  border: 1px solid #aed1ff;
+}
+.network-nodes i:nth-child(1) {
+  inset: 0 auto auto 0;
+}
+.network-nodes i:nth-child(2) {
+  inset: 0 0 auto auto;
+}
+.network-nodes i:nth-child(3) {
+  inset: auto auto 0 0;
+}
+.network-nodes i:nth-child(4) {
+  inset: auto 0 0 auto;
+}

@@ -5,23 +5,26 @@ import { localizedPath, type Locale } from "@/lib/i18n/config";
 import type { Dictionaries } from "@/lib/i18n/dictionaries";
 import ParticleGlobe from "../ParticleGlobe";
 import { useMotion } from "../site/MotionProvider";
+import RotatingSpecialty from "./RotatingSpecialty";
 
 export default function Hero({
   locale,
   t,
   common,
+  specialties,
 }: {
   locale: Locale;
   t: Dictionaries["home"];
   common: Dictionaries["common"];
+  specialties: string[];
 }) {
   const { paused, toggle } = useMotion();
   return (
     <section className="hero">
       <div className="hero-grid" aria-hidden="true" />
-      <div className="hero-aura" aria-hidden="true" />
+      <div className="aurora aurora-one" aria-hidden="true" />
       <div className="container hero-layout">
-        <div className="hero-copy">
+        <div className="hero-copy" data-reveal>
           <div className="hero-badge">
             <i />
             {t.badge}
@@ -30,10 +33,8 @@ export default function Hero({
             {t.title}
             <br />
             <span className="gradient-text">{t.titleAccent}</span>
-            <span className="headline-star" aria-hidden="true">
-              ✳
-            </span>
           </h1>
+          <RotatingSpecialty items={specialties} />
           <p>{t.intro}</p>
           <div className="hero-actions">
             <Link
@@ -67,8 +68,11 @@ export default function Hero({
             </span>
           </div>
         </div>
-        <div className="hero-visual">
-          <span className="visual-coordinate">{t.visualLabel}</span>
+        <div className="hero-visual" data-reveal="scale">
+          <div className="visual-heading">
+            <span className="online-dot" />
+            <span>{t.visualLabel}</span>
+          </div>
           <div className="globe-stage">
             <ParticleGlobe paused={paused} />
             <div className="globe-orbit orbit-a" />
@@ -82,30 +86,27 @@ export default function Hero({
                 priority
               />
             </div>
+            <div className="orbital-dot dot-one" aria-hidden="true" />
+            <div className="orbital-dot dot-two" aria-hidden="true" />
           </div>
-          <div className="floating-card float-code">
-            <div className="float-icon" aria-hidden="true">
-              &lt;/&gt;
+          <div className="visual-cards">
+            <div className="floating-card float-code">
+              <div className="float-icon" aria-hidden="true">
+                &lt;/&gt;
+              </div>
+              <div>
+                <small>{t.cardLabel}</small>
+                <strong>{t.cardTitle}</strong>
+              </div>
             </div>
-            <div>
-              <small>{t.cardLabel}</small>
-              <strong>{t.cardTitle}</strong>
-            </div>
-            <i className="online-dot" />
-          </div>
-          <div className="floating-card float-ai">
-            <span className="ai-spark" aria-hidden="true">
-              ✳
-            </span>
-            <div>
-              <strong>{t.aiTitle}</strong>
-              <small>{t.aiLabel}</small>
-            </div>
-            <div className="signal-bars" aria-hidden="true">
-              <i />
-              <i />
-              <i />
-              <i />
+            <div className="floating-card float-ai">
+              <span className="ai-spark" aria-hidden="true">
+                ✳
+              </span>
+              <div>
+                <strong>{t.aiTitle}</strong>
+                <small>{t.aiLabel}</small>
+              </div>
             </div>
           </div>
           <div className="visual-bottom">

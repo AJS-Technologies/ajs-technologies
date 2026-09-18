@@ -1,0 +1,345 @@
+/* Shared tokens. Component files own their layout; they do not redefine this scale. */
+:root {
+  color-scheme: dark;
+  --background: #080d19;
+  --foreground: #eff4ff;
+  --surface: #101929;
+  --surface-raised: #152136;
+  --muted: #a5b4ce;
+  --subtle: #91a6c7;
+  --blue: #4c8fff;
+  --cyan: #9ddcff;
+  --line: #26354d;
+  --line-accent: #4f72aa;
+  --text-small: 0.875rem;
+  --text-body: 1rem;
+  --text-lead: 1.125rem;
+  --text-card: 1.25rem;
+  --text-section: clamp(1.875rem, 3vw, 2.5rem);
+  --text-page: clamp(2.25rem, 4.5vw, 3.5rem);
+  --text-hero: clamp(2.75rem, 5.2vw, 4.5rem);
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --section-space: clamp(4rem, 6.5vw, 6rem);
+  --page-gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --radius-small: 0.5rem;
+  --radius-card: 1rem;
+  --radius-panel: 1.25rem;
+  --font-vazirmatn: 'Vazirmatn', var(--font-arabic), Tahoma, sans-serif;
+  --font-nastaliq: 'Noto Nastaliq Urdu', var(--font-arabic), Tahoma, sans-serif;
+}
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 7rem;
+}
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+  font-size: var(--text-body);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  cursor: pointer;
+}
+button,
+a {
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+img,
+canvas {
+  display: block;
+  max-inline-size: 100%;
+}
+img {
+  block-size: auto;
+}
+button,
+input,
+select,
+textarea {
+  min-inline-size: 0;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  overflow-wrap: break-word;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+h1 {
+  font-size: var(--text-page);
+  line-height: 1.15;
+}
+h2 {
+  font-size: var(--text-section);
+  line-height: 1.25;
+}
+h3,
+h4 {
+  font-size: var(--text-card);
+  line-height: 1.4;
+}
+p {
+  font-size: var(--text-body);
+  line-height: 1.85;
+  color: var(--muted);
+}
+small {
+  font-size: var(--text-small);
+}
+::selection {
+  background: #306ee0;
+  color: #fff;
+}
+:where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 5px;
+}
+.site {
+  isolation: isolate;
+}
+.container {
+  inline-size: 100%;
+  max-inline-size: 80rem;
+  padding-inline: var(--page-gutter);
+  margin-inline: auto;
+}
+.section {
+  padding-block: var(--section-space);
+}
+.section-top {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+  gap: var(--space-7);
+  align-items: end;
+  margin-block-end: var(--space-7);
+}
+.section-top > p {
+  max-inline-size: 25rem;
+  justify-self: end;
+}
+.section-top > .text-link {
+  justify-self: end;
+}
+.section-top h2 {
+  margin-block-start: var(--space-4);
+}
+.eyebrow {
+  display: flex;
+  gap: var(--space-3);
+  align-items: center;
+  font-size: var(--text-small);
+  font-weight: 500;
+  color: #adcbf8;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+}
+.eyebrow > span {
+  flex-shrink: 0;
+  padding: var(--space-1) var(--space-2);
+  color: var(--cyan);
+  background: #1a3051;
+  border-radius: 0.25rem;
+  font: inherit;
+}
+.muted {
+  color: var(--muted);
+}
+.gradient-text {
+  color: #91bfff;
+  background: linear-gradient(110deg, #6ba4ff, #b8e5ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  min-block-size: 3rem;
+  max-inline-size: 100%;
+  padding: 0.75rem 1.25rem;
+  border: 1px solid transparent;
+  border-radius: var(--radius-small);
+  font-size: var(--text-body);
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  transition:
+    background 0.2s,
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+.button > span {
+  font-size: var(--text-card);
+  font-weight: 400;
+  flex-shrink: 0;
+}
+.primary {
+  background: #2868d7;
+  border-color: #588ff1;
+  color: #fff;
+  box-shadow:
+    inset 0 1px 0 #b6d4ff22,
+    0 6px 25px #155ce91f;
+}
+.primary:hover {
+  background: #3272df;
+  border-color: #8db9ff;
+  box-shadow: 0 6px 25px #256bec38;
+}
+.secondary,
+.nav-cta {
+  background: #142139;
+  border-color: #3a5276;
+  color: #e5efff;
+}
+.secondary:hover,
+.nav-cta:hover {
+  background: #1e3150;
+  border-color: #739bd8;
+}
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-body);
+  font-weight: 500;
+  line-height: 1.65;
+  color: #9ec6ff;
+}
+.text-link > span {
+  flex-shrink: 0;
+  font-size: var(--text-card);
+  transition: transform 0.2s;
+}
+.text-link:hover > span {
+  transform: translate(2px, -2px);
+}
+.section-link {
+  margin-block-start: var(--space-6);
+}
+.online-dot {
+  display: inline-block;
+  inline-size: 0.375rem;
+  block-size: 0.375rem;
+  border-radius: 50%;
+  background: var(--cyan);
+  box-shadow: 0 0 10px #6ab7ff66;
+  flex-shrink: 0;
+}
+.skip-link {
+  position: fixed;
+  inset-block-start: -6rem;
+  inset-inline-start: 1rem;
+  padding: 0.75rem 1rem;
+  background: #2c68d1;
+  color: white;
+  z-index: 100;
+  border-radius: var(--radius-small);
+}
+.skip-link:focus {
+  inset-block-start: 1rem;
+}
+.sr-only {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+[dir="rtl"] {
+  --text-small: 0.9375rem;
+  --text-body: 1.0625rem;
+  --text-lead: 1.1875rem;
+  --text-card: 1.375rem;
+}
+[dir="rtl"] body {
+  font-family: var(--font-arabic), Tahoma, sans-serif;
+  line-height: 1.9;
+}
+
+/* Language-specific RTL font tweaks */
+html[lang="fa-AF"] {
+  --font-arabic: 'Vazirmatn', Tahoma, sans-serif;
+  --font-arabic-heading: 'Vazirmatn', Tahoma, sans-serif;
+}
+html[lang="ps-AF"] {
+  --font-arabic: 'Vazirmatn', Tahoma, sans-serif;
+  --font-arabic-heading: 'Vazirmatn', Tahoma, sans-serif;
+}
+[dir="rtl"] :is(h1, h2, h3, h4, .eyebrow) {
+  letter-spacing: 0;
+}
+[dir="rtl"] :is(h1, h2) {
+  font-family: var(--font-arabic-heading), var(--font-arabic), serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+[dir="rtl"] :is(h3, h4) {
+  font-family: var(--font-arabic-heading), var(--font-arabic), serif;
+  line-height: 1.6;
+}
+[dir="rtl"] :is(input, textarea, select, button) {
+  letter-spacing: 0;
+}
+[dir="rtl"] p {
+  line-height: 1.95;
+}
+[dir="rtl"] .service-content h3 {
+  min-block-size: 3.2em;
+}
+@media (max-width: 48rem) {
+  .section-top {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-5);
+    margin-block-end: var(--space-6);
+  }
+  .section-top > p {
+    max-inline-size: 38rem;
+    justify-self: start;
+  }
+  .section-top > .text-link {
+    justify-self: start;
+  }
+}

@@ -26,7 +26,7 @@ export default function SolutionExplorer({
   const solution = t.items[active];
   const format = new Intl.NumberFormat(languageTags[locale]);
   return (
-    <div>
+    <div data-reveal>
       <div className="solution-tabs" role="tablist" aria-label={t.tabsLabel}>
         {t.items.map((item, index) => (
           <button

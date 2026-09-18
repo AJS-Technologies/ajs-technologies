@@ -3,13 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
-import {
-  languageNames,
-  locales,
-  localizedPath,
-  type Locale,
-} from "@/lib/i18n/config";
+import { localizedPath, type Locale } from "@/lib/i18n/config";
 import type { Dictionaries } from "@/lib/i18n/dictionaries";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header({
   locale,
@@ -31,15 +27,6 @@ export default function Header({
     if (menu) window.addEventListener("keydown", close);
     return () => window.removeEventListener("keydown", close);
   }, [menu]);
-  function changeLanguage(next: string) {
-    const segments = pathname.split("/");
-    segments[1] = next;
-    const target =
-      segments.join("/") + window.location.search + window.location.hash;
-    setMenu(false);
-    // A document navigation also updates the root HTML language and direction.
-    window.location.assign(target);
-  }
   return (
     <header className="header">
       <div className="container header-inner">
@@ -90,30 +77,23 @@ export default function Header({
           </Link>
         </nav>
         <div className="header-tools">
-          <label className="language-switch">
-            <span className="sr-only">{t.language}</span>
-            <span aria-hidden="true">◎</span>
-            <select
-              aria-label={t.language}
-              value={locale}
-              onChange={(event) => changeLanguage(event.target.value)}
-            >
-              {locales.map((lang) => (
-                <option key={lang} value={lang} lang={lang}>
-                  {languageNames[lang]}
-                </option>
-              ))}
-            </select>
-          </label>
+          <LanguageSwitcher
+            locale={locale}
+            label={t.language}
+            onOpen={() => setMenu(false)}
+          />
           <button
             ref={menuButton}
             className="menu-toggle"
             aria-controls="main-nav"
             aria-expanded={menu}
+            aria-label={menu ? t.close : t.menu}
             onClick={() => setMenu(!menu)}
           >
-            {menu ? t.close : t.menu}{" "}
-            <span aria-hidden="true">{menu ? "−" : "+"}</span>
+            <span className="menu-bars" aria-hidden="true">
+              <i />
+              <i />
+            </span>
           </button>
         </div>
       </div>

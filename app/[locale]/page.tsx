@@ -10,6 +10,8 @@ import { pageMetadata } from "@/lib/metadata";
 import Hero from "@/app/components/home/Hero";
 import ServiceGrid from "@/app/components/services/ServiceGrid";
 import CallToAction from "@/app/components/ui/CallToAction";
+import CapabilityRibbon from "@/app/components/home/CapabilityRibbon";
+import FeaturedSolutions from "@/app/components/home/FeaturedSolutions";
 
 export async function generateMetadata({ params }: PageProps) {
   const locale = await pageLocale(params);
@@ -17,15 +19,21 @@ export async function generateMetadata({ params }: PageProps) {
 }
 export default async function HomePage({ params }: PageProps) {
   const locale = await pageLocale(params);
-  const [t, common, services, process] = await Promise.all([
+  const [t, common, services, process, solutions] = await Promise.all([
     getDictionary(locale, "home"),
     getDictionary(locale, "common"),
     getDictionary(locale, "services"),
     getDictionary(locale, "process"),
+    getDictionary(locale, "solutions"),
   ]);
   return (
     <>
-      <Hero locale={locale} t={t} common={common} />
+      <Hero
+        locale={locale}
+        t={t}
+        common={common}
+        specialties={services.items.map((item) => item.title)}
+      />
       <section className="tech-strip">
         <div className="container tech-strip-inner">
           <span className="strip-caption">{t.stack}</span>
@@ -60,12 +68,14 @@ export default async function HomePage({ params }: PageProps) {
         </div>
         <ServiceGrid locale={locale} t={services} />
       </section>
+      <CapabilityRibbon t={services} label={t.servicesEyebrow} />
+      <FeaturedSolutions locale={locale} t={solutions} />
       <section className="solutions-section">
         <div className="container section">
           <div className="section-top" data-reveal>
             <div>
               <div className="eyebrow">
-                <span>02</span>
+                <span>03</span>
                 {t.processEyebrow}
               </div>
               <h2>{t.processTitle}</h2>

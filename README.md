@@ -13,7 +13,7 @@ Open http://localhost:3000. The root redirects to `/en`.
 
 ## Pages and languages
 
-The site supports English (`en`), Dari (`fa`, document language `fa-AF`), and Pashto (`ps`, document language `ps-AF`). Dari and Pashto use right-to-left layouts. The language selector preserves the current page, query parameters, and anchor, and loads a new document so the HTML language and direction always match.
+The site supports English (`en`), Dari (`fa`, document language `fa-AF`), and Pashto (`ps`, document language `ps-AF`). Dari and Pashto use right-to-left layouts. The styled language menu preserves the current page, query parameters, and anchor, and loads a new document so the HTML language and direction always match. It shows native language names and the current selection, supports arrow keys, Home/End and Escape, and closes on outside interaction.
 
 Each language has these routes:
 
@@ -48,8 +48,14 @@ app/
     site/                       Header, footer, language and motion controls
     ui/                         Page hero, CTA, and FAQ components
   layout.tsx                    HTML language, direction, fonts, metadata
-  globals.css                   Shared design system, components, and animation
-  styles/pages.css              Interior page layouts and right-to-left styles
+  globals.css                   Single stylesheet entry point
+  styles/foundation.css         Shared type, spacing, color, and radius tokens
+  styles/site.css               Navigation, footer, and calls to action
+  styles/home.css               Homepage composition and workspace preview
+  styles/components.css         Cards, solution explorer, FAQs, and forms
+  styles/illustrations.css      Consistently sized service illustrations
+  styles/pages.css              Interior page layouts
+  styles/motion.css             Animation and reduced-motion behavior
 lib/
   i18n/config.ts                Supported locales, direction, localized links
   i18n/dictionaries.ts          Typed, cached page dictionary loading
@@ -83,7 +89,11 @@ A future server-side submission endpoint will need an email provider and deploym
 
 ## Motion and accessibility
 
-Animations respect `prefers-reduced-motion`. The shared pause control applies across pages during navigation. The particle canvas stops rendering when offscreen or when the tab is hidden. Interactive solution tabs support arrow keys, Home, and End, with arrow direction matched to the document. Navigation has active-page indicators, a mobile menu, keyboard focus styles, and a skip link. FAQs use native keyboard-accessible disclosure elements.
+Cards and sections reveal once as they enter the viewport, with sibling staggering and subtle scale transitions on visual panels. Registration covers streamed content and client navigation; focused content is revealed immediately. Hover lifts, menu entrances, and FAQ text transitions add smaller motion details. Animations respect `prefers-reduced-motion`. The shared pause control applies across pages during navigation. The particle canvas stops rendering when offscreen or when the tab is hidden. Interactive solution tabs support arrow keys, Home, and End, with arrow direction matched to the document. Navigation has active-page indicators, a mobile menu, keyboard focus styles, and a skip link. FAQs use native keyboard-accessible disclosure elements.
+
+The styles have a single entry point in `app/globals.css`. `app/styles/foundation.css` owns the shared typography, colors, spacing, and radii; the remaining stylesheets own site chrome, home sections, shared components, illustrations, interior pages, and motion. Change shared tokens instead of adding overriding design layers.
+
+The visual system uses self-hosted Manrope for Latin text, Noto Sans Arabic for Dari/Pashto body text and controls, and Noto Naskh Arabic for their headings. Main reading text is 16–18 px at laptop breakpoints. The home experience includes animated specialties, aurora lighting, uniform service cards, a moving capabilities strip, and an illustrative workspace. Decorative hover lighting is limited to fine pointers; the shared motion control also pauses the specialty rotation and ribbon.
 
 ## Validation and formatting
 

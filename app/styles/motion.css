@@ -1,0 +1,217 @@
+@keyframes aurora-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 0.7;
+  }
+  to {
+    transform: translate3d(-40px, 30px, 0);
+    opacity: 1;
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes specialty-enter {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes cursor-blink {
+  to {
+    opacity: 0.3;
+  }
+}
+@keyframes ribbon-move {
+  to {
+    transform: translateX(-50%);
+  }
+}
+@keyframes bars-breathe {
+  0%,
+  100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.87);
+  }
+}
+@keyframes flow {
+  from {
+    transform: translateX(-150%);
+  }
+  to {
+    transform: translateX(550%);
+  }
+}
+@keyframes content-enter {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.reveal-ready {
+  opacity: 0;
+  translate: 0 32px;
+  transition:
+    opacity 0.8s ease,
+    translate 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    scale 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+.reveal-ready[data-reveal="scale"] {
+  scale: 0.97;
+}
+.reveal-ready.revealed {
+  opacity: 1;
+  translate: 0 0;
+  scale: 1;
+}
+.reveal-ready:focus-within {
+  opacity: 1;
+  translate: none;
+  scale: 1;
+  transition: none;
+}
+@keyframes popover-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-6px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes answer-enter {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.faq-list details[open] p {
+  animation: answer-enter 0.3s ease-out;
+}
+.nav.open {
+  animation: popover-enter 0.25s ease-out;
+}
+.button {
+  transition:
+    transform 0.25s ease,
+    background 0.25s,
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+.service-card,
+.value-card {
+  transition:
+    transform 0.35s cubic-bezier(0.2, 0.7, 0.3, 1),
+    border-color 0.25s,
+    box-shadow 0.25s;
+}
+/* Keep reveal translation separate from hover transforms so they compose cleanly. */
+.service-card.reveal-ready,
+.value-card.reveal-ready {
+  transition:
+    opacity 0.8s ease,
+    translate 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.35s ease,
+    border-color 0.25s,
+    box-shadow 0.25s;
+  transition-delay:
+    var(--reveal-delay, 0ms), var(--reveal-delay, 0ms), 0ms, 0ms, 0ms;
+}
+@media (hover: hover) and (pointer: fine) {
+  .site:not(.motion-paused) .button:hover {
+    transform: translateY(-2px);
+  }
+  .site:not(.motion-paused) :is(.service-card, .value-card):hover {
+    transform: translateY(-5px);
+    border-color: #6088bf;
+    box-shadow: 0 16px 36px #0004;
+  }
+}
+.site:not(.motion-paused) .button:active {
+  transform: translateY(0) scale(0.98);
+}
+.motion-paused *,
+.motion-paused *::before,
+.motion-paused *::after {
+  animation-play-state: paused !important;
+}
+.motion-paused .reveal-ready {
+  opacity: 1;
+  translate: none;
+  scale: 1;
+  transition: none;
+}
+.motion-paused
+  :is(
+    .specialty-word,
+    .solution-copy,
+    .language-popover,
+    .nav.open,
+    .faq-list details[open] p
+  ) {
+  animation: none;
+  opacity: 1;
+  transform: none;
+}
+.motion-paused .chart > div {
+  transition: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal-ready {
+    opacity: 1;
+    translate: none;
+    scale: 1;
+  }
+  .site:not(.motion-paused)
+    :is(.button, .service-card, .value-card):is(:hover, :active) {
+    transform: none;
+  }
+  .ribbon-track {
+    inline-size: auto;
+  }
+  .ribbon-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-4);
+  }
+  .ribbon-group:nth-child(2) {
+    display: none;
+  }
+  .ribbon-group > span {
+    white-space: normal;
+  }
+}

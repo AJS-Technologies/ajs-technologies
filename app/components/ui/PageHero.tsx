@@ -30,7 +30,7 @@ export default function PageHero({
           <span>{eyebrow}</span>
         </nav>
         <div className="page-hero-layout">
-          <div>
+          <div data-reveal>
             <div className="eyebrow">
               <span>{number}</span>
               {eyebrow}
@@ -42,7 +42,7 @@ export default function PageHero({
             </h1>
             <p>{intro}</p>
           </div>
-          <div className="page-emblem" aria-hidden="true">
+          <div className="page-emblem" aria-hidden="true" data-reveal="scale">
             <span>✳</span>
             <i />
             <b>{number} / AJS</b>

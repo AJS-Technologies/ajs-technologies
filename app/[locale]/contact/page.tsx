@@ -35,7 +35,7 @@ export default async function ContactPage({
         number="05"
       />
       <section className="section container contact-page-grid">
-        <div className="contact-page-copy">
+        <div className="contact-page-copy" data-reveal>
           <div className="eyebrow">{t.emailLabel}</div>
           <a
             className="contact-email"

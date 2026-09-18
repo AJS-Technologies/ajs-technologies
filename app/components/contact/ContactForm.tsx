@@ -15,6 +15,7 @@ export default function ContactForm({
   const email = "info@ajstechnologies.com";
   return (
     <form
+      data-reveal
       className="contact-form"
       onSubmit={(event) => {
         event.preventDefault();
