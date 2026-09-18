@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+AJS Technologies — Draft Website
 
-## Getting Started
+This repository contains a minimal Next.js draft site for AJS Technologies. It's a starting point with a hero, services list, and simple header/footer components.
 
-First, run the development server:
+Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+What I changed
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Updated site metadata (`app/layout.tsx`) to use the AJS Technologies title and description.
+- Extracted header and footer into `app/components/Header.tsx` and `app/components/Footer.tsx` and wired them into `app/page.tsx`.
+- Kept the existing hero and services layout as a draft you can iterate on.
 
-## Learn More
+Next steps (suggested)
 
-To learn more about Next.js, take a look at the following resources:
+- Add real branding assets in `public/` (logo, favicon).
+- Replace placeholder copy with your company text and contact details.
+- Add a contact form or CMS integration for content updates.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If you'd like, I can continue by adding a logo, contact form, or example projects section.
