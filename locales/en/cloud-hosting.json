@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Cloud hosting & domains",
+    "description": "Hosting setup, domains, deployment, and maintenance planning for your digital business."
+  },
+  "title": "A solid foundation",
+  "accent": "for what’s next.",
+  "intro": "Give your website or application a dependable home, with infrastructure choices that fit its needs.",
+  "overviewTitle": "Make the technical essentials manageable.",
+  "overviewText": "We help plan and configure hosting, domains, and deployment workflows. Backups, monitoring, and maintenance are defined around the needs of your project.",
+  "deliverables": [
+    {
+      "title": "Hosting setup",
+      "text": "Configure an appropriate environment for your website or application."
+    },
+    {
+      "title": "Domains & DNS",
+      "text": "Connect domains and services with clear ownership and configuration."
+    },
+    {
+      "title": "Deployment workflows",
+      "text": "Create a repeatable way to release updates and manage environments."
+    },
+    {
+      "title": "Maintenance planning",
+      "text": "Agree on backup, monitoring, update, and support responsibilities."
+    }
+  ],
+  "outcomes": [
+    "Understand where and how your digital product runs",
+    "Make releases and ongoing care more predictable",
+    "Plan infrastructure around actual requirements"
+  ]
+}

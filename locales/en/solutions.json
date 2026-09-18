@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "title": "Solutions",
+    "description": "Explore digital experiences, connected business systems, and practical AI workflows built around real business needs."
+  },
+  "eyebrow": "POSSIBILITIES IN ACTION",
+  "title": "Built for the way",
+  "accent": "your world works.",
+  "intro": "Technology makes more sense when you can see what it could do for you. Explore a few starting points, then let’s shape the one that fits your business.",
+  "tabsLabel": "Explore solutions",
+  "action": "Discuss this solution",
+  "concept": "CONCEPT PREVIEW",
+  "sampleNote": "Illustrative interfaces with sample data, not client results.",
+  "workspace": "workspace",
+  "overview": "Overview",
+  "glance": "YOUR BUSINESS, AT A GLANCE",
+  "period": "Last 30 days",
+  "sampleMetric": "Sample metric",
+  "activity": "Activity overview",
+  "thisPeriod": "This period",
+  "week": "WEEK",
+  "connected": "Connected by design",
+  "onePlace": "Everything in one place.",
+  "items": [
+    {
+      "name": "Business systems",
+      "heading": "Less friction. More flow.",
+      "text": "Replace scattered spreadsheets with a workspace designed around your operations. Connect inventory, teams, and reporting in one place.",
+      "features": [
+        "One connected source of information",
+        "Workflows built around your team",
+        "Clear, actionable reporting"
+      ],
+      "label": "Operations overview",
+      "badge": "ERP / BUSINESS SYSTEM",
+      "stats": ["Revenue", "Orders", "Active projects"]
+    },
+    {
+      "name": "Digital experiences",
+      "heading": "Make every interaction count.",
+      "text": "Give your business a digital home that feels as good as it works. Create clear journeys, effortless shopping, and a memorable first impression.",
+      "features": [
+        "Responsive from the very first screen",
+        "Clear paths from discovery to action",
+        "Performance built into the experience"
+      ],
+      "label": "Experience overview",
+      "badge": "WEB / DIGITAL EXPERIENCE",
+      "stats": ["Visitors", "Page views", "Conversions"]
+    },
+    {
+      "name": "AI & automation",
+      "heading": "Make room for what matters.",
+      "text": "Connect your tools and simplify repetitive tasks with practical automation. Give your team more time for the work that needs a human touch.",
+      "features": [
+        "Assistants grounded in your knowledge",
+        "Connected tools and repeatable workflows",
+        "People in control of important decisions"
+      ],
+      "label": "Workflow overview",
+      "badge": "AI / SMART AUTOMATION",
+      "stats": ["Tasks completed", "Workflows", "Hours saved"]
+    }
+  ],
+  "fitTitle": "Start with the problem. Shape the solution.",
+  "fitText": "These are starting points, not fixed packages. We combine the right services and technology around your priorities, current tools, and the people who will use them.",
+  "fitAction": "Explore our capabilities"
+}

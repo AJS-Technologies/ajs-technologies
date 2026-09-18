@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Business systems & databases",
+    "description": "Connect operations, workflows, and data with custom business software from AJS Technologies."
+  },
+  "title": "Less scattered work.",
+  "accent": "More connected thinking.",
+  "intro": "Bring the information your team needs into systems that reflect how your business actually works.",
+  "overviewTitle": "Clarity across your operations.",
+  "overviewText": "When tools and spreadsheets no longer fit, we help map your processes and build a practical system around your people, data, and decisions.",
+  "deliverables": [
+    {
+      "title": "Operations software",
+      "text": "Manage inventory, projects, customers, or internal processes in a focused workspace."
+    },
+    {
+      "title": "Databases & migration",
+      "text": "Plan data structures, clean up information, and move toward a dependable foundation."
+    },
+    {
+      "title": "Reporting dashboards",
+      "text": "Turn agreed business metrics into useful, understandable views."
+    },
+    {
+      "title": "Workflow integration",
+      "text": "Connect existing tools and reduce unnecessary manual handoffs."
+    }
+  ],
+  "outcomes": [
+    "Bring important information into one view",
+    "Reduce repeated entry and disconnected processes",
+    "Give teams tools that match their responsibilities"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "title": "Contact",
+    "description": "Tell AJS Technologies about your next website, software, AI, or IT project. Start a conversation about what comes next."
+  },
+  "eyebrow": "LET’S START SOMETHING",
+  "title": "Your next big thing",
+  "accent": "starts with a hello.",
+  "intro": "Got an idea, a challenge, or a ‘what if’? Tell us a little about it. We’ll help you think through the next step.",
+  "emailLabel": "EMAIL US DIRECTLY",
+  "caption": "BIG IDEAS WELCOME. ALWAYS.",
+  "formTitle": "Tell us what’s next.",
+  "name": "Your name",
+  "namePlaceholder": "Your full name",
+  "email": "Email address",
+  "emailPlaceholder": "you@company.com",
+  "company": "Company / organization",
+  "companyPlaceholder": "Optional",
+  "service": "I’m interested in",
+  "servicePlaceholder": "Select a service",
+  "serviceOptions": [
+    "Web development",
+    "Business systems",
+    "AI & automation",
+    "Mobile applications",
+    "Cloud & hosting",
+    "IT & networking",
+    "Let’s explore an idea"
+  ],
+  "message": "A little about your project",
+  "messagePlaceholder": "What would you like to build or improve? Any goals, timing, or constraints?",
+  "submit": "Prepare my inquiry",
+  "note": "This draft opens your email app. Your inquiry is only sent when you send the email; this website does not store it.",
+  "readyTitle": "Your inquiry is ready.",
+  "readyText": "Send it in your email app to finish. If your email app didn’t open, copy the inquiry below and email it to us directly.",
+  "copy": "Copy inquiry",
+  "copied": "Copied to clipboard",
+  "copyFailed": "Select and copy the inquiry below.",
+  "inquiryLabel": "Prepared inquiry",
+  "subject": "Project inquiry",
+  "nextTitle": "What happens next?",
+  "nextSteps": [
+    {
+      "title": "We understand the idea",
+      "text": "We review what you share and identify the questions that will help us understand your project."
+    },
+    {
+      "title": "We explore the fit",
+      "text": "We discuss your goals, the current setup, and the scope of a useful first step."
+    },
+    {
+      "title": "We agree on a direction",
+      "text": "If there’s a fit, we outline a clear proposal and a practical plan to move forward."
+    }
+  ],
+  "faqTitle": "Before you say hello.",
+  "faqs": [
+    {
+      "question": "Do I need a detailed brief?",
+      "answer": "No. A short description of your idea or challenge is enough to start. Share whatever you already know, and we can explore the rest together."
+    },
+    {
+      "question": "Can we discuss a project in Dari or Pashto?",
+      "answer": "You can write your inquiry in English, Dari, or Pashto. Include your preferred language when you contact us."
+    },
+    {
+      "question": "Should I include passwords or private data?",
+      "answer": "Please send only a general description at this stage. If a project requires access to systems or sensitive information, we can agree on an appropriate way to share it later."
+    }
+  ]
+}

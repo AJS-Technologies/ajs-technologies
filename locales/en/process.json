@@ -1,0 +1,64 @@
+{
+  "meta": {
+    "title": "Our process",
+    "description": "A clear path from discovery to launch. See how AJS Technologies collaborates, designs, builds, and supports your digital project."
+  },
+  "eyebrow": "A CLEAR WAY FORWARD",
+  "title": "Big ambition.",
+  "accent": "A practical plan.",
+  "intro": "You should always know what we’re building, why it matters, and what happens next. Our process creates space for good ideas and keeps the work moving.",
+  "outputLabel": "WHAT YOU TAKE AWAY",
+  "steps": [
+    {
+      "title": "Discover",
+      "text": "First, we get curious. We listen to your goals, understand the people you serve, and explore your existing tools and constraints.",
+      "outputs": [
+        "A shared problem statement",
+        "Project priorities and success criteria",
+        "An initial scope and delivery plan"
+      ]
+    },
+    {
+      "title": "Design",
+      "text": "We turn understanding into a direction. User journeys, interface concepts, and technical decisions take shape before development starts.",
+      "outputs": [
+        "Reviewed user journeys and key screens",
+        "An agreed technical direction",
+        "A prioritized delivery roadmap"
+      ]
+    },
+    {
+      "title": "Develop",
+      "text": "We build in manageable stages. Regular previews, testing, and your feedback help us solve issues while the work is still taking shape.",
+      "outputs": [
+        "Working increments to review",
+        "Testing against agreed requirements",
+        "Clear visibility into progress"
+      ]
+    },
+    {
+      "title": "Deploy & evolve",
+      "text": "Launch is a beginning. We prepare the handover, help you get comfortable, and discuss what ongoing support should look like.",
+      "outputs": [
+        "A launch and handover checklist",
+        "Documentation for your team",
+        "An agreed support and improvement plan"
+      ]
+    }
+  ],
+  "principlesTitle": "No black boxes. No surprises.",
+  "principles": [
+    {
+      "title": "Visible progress",
+      "text": "See the work as it develops, with review points agreed from the start."
+    },
+    {
+      "title": "Decisions together",
+      "text": "Understand the tradeoffs and help shape the decisions that affect your business."
+    },
+    {
+      "title": "Room to adapt",
+      "text": "When priorities shift, we discuss the impact and update the plan together."
+    }
+  ]
+}

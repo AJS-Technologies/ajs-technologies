@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Mobile applications",
+    "description": "Thoughtful iOS, Android, and cross-platform app experiences by AJS Technologies."
+  },
+  "title": "Your idea.",
+  "accent": "Within reach.",
+  "intro": "Build a mobile experience that fits the moment, the device, and the people using it.",
+  "overviewTitle": "A useful companion to your business.",
+  "overviewText": "We shape mobile products around real journeys, from the first screen to the systems behind it. Platform choices follow your audience and requirements.",
+  "deliverables": [
+    {
+      "title": "Customer applications",
+      "text": "Service, booking, or account experiences that keep your business close at hand."
+    },
+    {
+      "title": "Team applications",
+      "text": "Focused tools for work on the move, with permissions and workflows that make sense."
+    },
+    {
+      "title": "Connected backends",
+      "text": "APIs and integrations that connect the app to the information it needs."
+    },
+    {
+      "title": "Release preparation",
+      "text": "Testing, store submission preparation, and a plan for future updates."
+    }
+  ],
+  "outcomes": [
+    "Reach your audience on their preferred devices",
+    "Simplify important tasks on smaller screens",
+    "Connect mobile workflows with your wider operation"
+  ]
+}

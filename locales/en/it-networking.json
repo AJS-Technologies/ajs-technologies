@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "IT & networking",
+    "description": "Practical network planning, infrastructure setup, and IT support from AJS Technologies."
+  },
+  "title": "Keep your people",
+  "accent": "connected.",
+  "intro": "Technology should support the working day. We help make your networks, devices, and systems fit the way your team works.",
+  "overviewTitle": "A clearer picture of your infrastructure.",
+  "overviewText": "We start by understanding the environment, identifying gaps, and prioritizing practical improvements to connectivity, access, and everyday support.",
+  "deliverables": [
+    {
+      "title": "Network planning",
+      "text": "Review and plan connectivity around your premises, users, and applications."
+    },
+    {
+      "title": "Infrastructure setup",
+      "text": "Configure equipment and services with a documented, maintainable approach."
+    },
+    {
+      "title": "Access & configuration",
+      "text": "Organize appropriate access and settings around team responsibilities."
+    },
+    {
+      "title": "IT support planning",
+      "text": "Define support priorities, documentation, and a practical path for resolving issues."
+    }
+  ],
+  "outcomes": [
+    "Support productive, connected everyday work",
+    "Understand your equipment and configuration",
+    "Plan improvements and support with clearer priorities"
+  ]
+}

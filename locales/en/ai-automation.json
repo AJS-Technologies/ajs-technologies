@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "AI & automation",
+    "description": "Practical AI assistants, knowledge tools, and workflow automation for your business."
+  },
+  "title": "Intelligence with",
+  "accent": "a real purpose.",
+  "intro": "Start with a useful task, not a buzzword. We explore where AI and automation can make your team’s work simpler.",
+  "overviewTitle": "Give your people room to focus.",
+  "overviewText": "We design AI-assisted workflows around your information, tools, and review needs. Evaluation and human oversight are part of the plan from the start.",
+  "deliverables": [
+    {
+      "title": "Knowledge assistants",
+      "text": "Help people find answers in approved information with useful context."
+    },
+    {
+      "title": "Workflow automation",
+      "text": "Connect repetitive steps across your existing tools and processes."
+    },
+    {
+      "title": "Document assistance",
+      "text": "Support classification, extraction, and drafting with human review where needed."
+    },
+    {
+      "title": "Prototypes & evaluation",
+      "text": "Test a focused use case and understand its limits before expanding it."
+    }
+  ],
+  "outcomes": [
+    "Reduce time spent on repetitive tasks",
+    "Make relevant information easier to access",
+    "Keep people involved in consequential decisions"
+  ]
+}

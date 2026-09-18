@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "title": "Web development",
+    "description": "Custom websites, e-commerce experiences, and web applications by AJS Technologies."
+  },
+  "title": "Your next great",
+  "accent": "digital experience.",
+  "intro": "A website should do more than look good. It should help people understand you, find what they need, and take the next step.",
+  "overviewTitle": "A stronger first impression. A better everyday experience.",
+  "overviewText": "We connect thoughtful interface design with practical engineering to create websites and applications around your audience and business goals.",
+  "deliverables": [
+    {
+      "title": "Business websites",
+      "text": "A clear, responsive home for your brand, services, and story."
+    },
+    {
+      "title": "E-commerce",
+      "text": "Product discovery, shopping flows, and integrations shaped around your operation."
+    },
+    {
+      "title": "Custom web applications",
+      "text": "Portals, dashboards, and browser-based tools designed for your users."
+    },
+    {
+      "title": "Content & integrations",
+      "text": "Connect your content, forms, and existing tools with a manageable foundation."
+    }
+  ],
+  "outcomes": [
+    "Make your business easier to discover and understand",
+    "Guide visitors toward a clear next action",
+    "Keep content and interfaces ready to evolve"
+  ]
+}

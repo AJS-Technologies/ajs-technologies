@@ -1,0 +1,74 @@
+{
+  "meta": {
+    "title": "Services",
+    "description": "Explore AJS Technologies services: web development, business systems, AI automation, mobile apps, cloud hosting, and IT networking."
+  },
+  "eyebrow": "CONNECTED EXPERTISE",
+  "title": "The right technology.",
+  "accent": "Built around you.",
+  "intro": "A website that opens doors. A system that brings clarity. An idea that becomes a product. Find the expertise to take your business forward.",
+  "indexLabel": "OUR CAPABILITIES",
+  "items": [
+    {
+      "title": "Web experiences",
+      "text": "High-performance websites and web apps that turn first impressions into lasting connections.",
+      "tags": ["Web development", "E-commerce"]
+    },
+    {
+      "title": "Business, connected.",
+      "text": "Custom systems that bring your people, processes, and data into one clear picture.",
+      "tags": ["ERP systems", "Databases", "Automation"]
+    },
+    {
+      "title": "Intelligence that works.",
+      "text": "Practical AI that takes the busywork out of your day and puts your data to work.",
+      "tags": ["AI assistants", "Smart workflows"]
+    },
+    {
+      "title": "Mobile applications",
+      "text": "Thoughtful mobile experiences. Built for real people, wherever life takes them.",
+      "tags": ["iOS & Android", "Cross-platform"]
+    },
+    {
+      "title": "Cloud & hosting",
+      "text": "A solid foundation for your next big thing. Hosting, domains, and ongoing care.",
+      "tags": ["Cloud hosting", "Domains"]
+    },
+    {
+      "title": "IT & infrastructure",
+      "text": "Keep your business moving with connected networks and dependable IT support.",
+      "tags": ["Networking", "IT support"]
+    }
+  ],
+  "engagementTitle": "The expertise you need. The way you need it.",
+  "engagementText": "Start with a focused project, connect several services, or plan an ongoing partnership. We agree on scope, responsibilities, and next steps before work begins.",
+  "engagements": [
+    {
+      "title": "A focused project",
+      "text": "A clear deliverable, a defined scope, and a shared plan to get it done."
+    },
+    {
+      "title": "A connected solution",
+      "text": "Combine design, software, and infrastructure around one business goal."
+    },
+    {
+      "title": "An ongoing partnership",
+      "text": "Plan maintenance, improvements, and the next phase as your needs evolve."
+    }
+  ],
+  "faqTitle": "A few things you might be wondering.",
+  "faqs": [
+    {
+      "question": "Where should we start?",
+      "answer": "Start with the problem you want to solve. We’ll discuss your current setup, priorities, and constraints, then recommend a practical next step."
+    },
+    {
+      "question": "Can you improve an existing website or system?",
+      "answer": "Yes. We first review its structure and condition, then propose improvements, integrations, or a rebuild where that makes sense."
+    },
+    {
+      "question": "How do you define cost and timing?",
+      "answer": "After discovery, we outline the scope, dependencies, milestones, and an estimate. Changes are discussed before they become additional work."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "title": "About us",
+    "description": "Meet AJS Technologies: a technology partner bringing design, development, and practical thinking together around your business."
+  },
+  "eyebrow": "ADVANCED JOINT SOLUTION",
+  "title": "Human at heart.",
+  "accent": "Future by design.",
+  "intro": "Technology should make life clearer, work easier, and new ideas possible. That’s the thinking behind AJS Technologies.",
+  "storyEyebrow": "WHY WE BUILD",
+  "storyTitle": "Your ambition is our starting point.",
+  "story": [
+    "Behind every great piece of technology is a human ambition. A business to grow. A problem to solve. An idea that deserves a chance.",
+    "We connect design, development, and practical thinking to help turn that ambition into something useful. Whether it’s a first website or a system that supports your operations, we look at the details and the bigger picture.",
+    "AJS stands for Advanced Joint Solution. For us, the word ‘joint’ matters: the best work happens when your business knowledge and our technical perspective come together."
+  ],
+  "valuesTitle": "The principles behind the pixels.",
+  "values": [
+    {
+      "title": "Understand before building",
+      "text": "We ask questions, listen carefully, and make sure we’re solving the right problem."
+    },
+    {
+      "title": "Make complexity useful",
+      "text": "The technology can be advanced. The experience should still feel clear and intuitive."
+    },
+    {
+      "title": "Build with care",
+      "text": "We value maintainable code, thoughtful interfaces, and attention to the details that matter."
+    },
+    {
+      "title": "Think beyond launch",
+      "text": "A good foundation leaves room for your business, your team, and your ideas to grow."
+    }
+  ],
+  "partnerTitle": "A partner in your next chapter.",
+  "partnerText": "Bring your business knowledge. Bring your questions. We’ll bring a thoughtful technical perspective and a practical way forward.",
+  "partnerAction": "See how we work"
+}
